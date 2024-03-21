@@ -1,3 +1,5 @@
+import kotlin.io.path.createTempDirectory
+
 fun main() {
    println(takeNum(3,5))
     println(changeWord("My name is Waluse"))
@@ -11,6 +13,9 @@ fun main() {
 
     var a = 22
     println("a = ${++a}")
+
+    takeWords("mary","Hur","Mia","Mue")
+
 
 
 }
@@ -86,6 +91,18 @@ fun nameAge(name: String,age:Int ): String{
 fun printInterest(name: String){
     println(name)
 }
+
+fun takeWords(name1:String,name2:String,name3:String, name4:String){
+    var nameArray = arrayOf(name1,name2,name3,name4)
+    println(nameArray.contentToString())
+}
+
+fun africancities(cities:Array<String>){
+    cities.forEach { city->
+        println(city.capitalize())
+    }
+}
+
 
 
 
