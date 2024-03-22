@@ -10,6 +10,7 @@ fun main() {
     println(printWord("akirachix"))
    println(nameAge("Waluse", 12))
     printInterest("I eat")
+    countChars("")
 
     var a = 22
     println("a = ${++a}")
@@ -102,6 +103,34 @@ fun africancities(cities:Array<String>){
         println(city.capitalize())
     }
 }
+
+
+fun countChars(word: String): Int {
+
+    var wordlen = word.length
+    return wordlen
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
